@@ -15,23 +15,25 @@ namespace HashTables
             Console.WriteLine("++++++++Welcome to Hash Table++++++++");
             //Declaring MyMapNode object with data type
             MyMapNode<string, string> hash = new MyMapNode<string, string>(5);
-            //Adding values in hashtable of keys and value
-            hash.Add("0", "To");
-            hash.Add("1", "be");
-            hash.Add("2", "or");
-            hash.Add("3", "not");
-            hash.Add("4", "To");
-            hash.Add("5", "be");
+            // //Adding values in hashtable of keys and value
+            //// hash.Add("0", "To");
+            // //hash.Add("1", "be");
+            // hash.Add("2", "or");
+            // hash.Add("3", "not");
+            // hash.Add("4", "To");
+            // hash.Add("5", "be");
             //To check the frequency of value
             //getting value with the help of key
-            string check = Console.ReadLine(); 
-            string valueofcheck= hash.Get(check);
-            Console.WriteLine(" Index value:" + check);
+            Console.WriteLine("Enter the string for checking frequency");
+            string userinput = Console.ReadLine();
+            hash.ParaCheck(userinput);
+            //string valueofcheck= hash.Get(check);
+            //Console.WriteLine(" Index value:" + check);
             
             //Displaying all the elements from the linkedlist
-            Console.WriteLine("Displaying all the key value pairs in hash table");
-            int counter=hash.Display(valueofcheck);
-            Console.WriteLine("Total amount of occurance: " + counter);
+           // Console.WriteLine("Displaying all the key value pairs in hash table");
+           // int counter=hash.Display(valueofcheck);
+            //Console.WriteLine("Total amount of occurance: " + );
             Console.ReadLine();
         }
     }

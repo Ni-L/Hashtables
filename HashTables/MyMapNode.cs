@@ -117,7 +117,24 @@ namespace HashTables
                 linkedList.Remove(foundItem);
             }
         }
-    
+        //Adding Method for finding Frequency in paragraph
+        public  void ParaCheck(string input)
+        {
+            int count = 0;
+            //String Paragraph
+            string check = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
+            //Split is a inbuild function use to split string using seprator
+            string[] arr = check.Split(' ');
+            foreach (var element in arr)
+            {
+                if(element.Equals(input))
+                {
+                    count = count + 1;
+                }
+                
+            }
+            Console.WriteLine("Number of Occurance: " + count);
+        }
        
         //Adding Display Method
         public int Display(string hash2)
